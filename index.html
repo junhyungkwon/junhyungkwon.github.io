@@ -1,416 +1,532 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>권준형 포트폴리오</title>
-    <meta name="description" content="React.js 전문 프론트엔드 개발자 - 혁신적인 웹 솔루션을 제공합니다">
-    <link rel="icon" href="/favicon.ico">
-    <link href="/static/css/portfolio.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+    <meta
+      name="description"
+      content="React.js 전문 프론트엔드 개발자 - 혁신적인 웹 솔루션을 제공합니다"
+    />
+    <link rel="icon" href="/favicon.ico" />
+    <link href="/static/css/portfolio.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- 네비게이션 -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">권준형 포트폴리오</a>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">홈</a>
-                <a href="#about" class="nav-link">소개</a>
-                <a href="#skills" class="nav-link">기술</a>
-                <a href="#experience" class="nav-link">경력</a>
-                <a href="#projects" class="nav-link">프로젝트</a>
-                <a href="#contact" class="nav-link">연락처</a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="#home">권준형 포트폴리오</a>
         </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link">홈</a>
+          <a href="#about" class="nav-link">소개</a>
+          <a href="#skills" class="nav-link">기술</a>
+          <a href="#experience" class="nav-link">경력</a>
+          <a href="#projects" class="nav-link">프로젝트</a>
+          <a href="#contact" class="nav-link">연락처</a>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
     </nav>
 
     <!-- 메인 히어로 섹션 -->
     <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    프론트엔드 개발자 권준형입니다. 웹 애플리케이션 개발에 <span class="highlight">React.js</span>를 포함한 다양한 기술을 적용합니다.
-                </h1>
-                <p class="hero-subtitle">
-                    사용자 중심의 직관적인 웹 애플리케이션 개발을 통해 최고의 사용자 경험을 제공하는 것이 저의 목표입니다
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
-                    <a href="#contact" class="btn btn-secondary">연락하기</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="hero-avatar">
-                    <img src="/static/media/profile.jpg" alt="프로필 사진" id="profile-img">
-                </div>
-            </div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            안녕하세요, 웹과 앱을 개발하는 프론트엔드 개발자 권준형입니다.
+          </h1>
+          <p class="hero-subtitle">
+            사용자 중심의 직관적인 웹 애플리케이션 개발을 통해 최고의 사용자
+            경험을 제공하는 것이 저의 목표입니다
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+            <a href="#contact" class="btn btn-primary">연락하기</a>
+          </div>
         </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
+        <div class="hero-image">
+          <div class="hero-avatar">
+            <img
+              src="../static/media/junhyung.jpeg"
+              alt="프로필 사진"
+              id="profile-img"
+            />
+          </div>
         </div>
+      </div>
+      <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+      </div>
     </section>
 
     <!-- 소개 섹션 -->
     <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">소개</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>프론트엔드 개발자로서의 여정</h3>
-                    <p>
-                        안녕하세요! 저는 React.js를 중심으로 한 프론트엔드 개발에 전문성을 갖춘 개발자입니다. 
-                        에듀테크부터 쇼핑몰, 심리 검사 플랫폼까지 다양한 도메인의 웹 애플리케이션을 개발해왔습니다.
-                    </p>
-                    <p>
-                        사용자 경험을 최우선으로 생각하며, 복잡한 기능도 직관적으로 사용할 수 있도록 하는 것이 제 개발 철학입니다. 
-                        최신 기술 트렌드를 지속적으로 학습하고 적용하여 더 나은 서비스를 만들어가고 있습니다.
-                    </p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <h4>3+</h4>
-                        <p>개발 경력</p>
-                    </div>
-                    <div class="stat-item">
-                        <h4>15+</h4>
-                        <p>완료된 프로젝트</p>
-                    </div>
-                    <div class="stat-item">
-                        <h4>5+</h4>
-                        <p>협업 회사</p>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">소개</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>프론트엔드 개발자로서의 여정</h3>
+            <p>
+              안녕하세요! 저는 React.js를 중심으로 한 프론트엔드 개발에 전문성을
+              갖춘 개발자입니다. 에듀테크부터 쇼핑몰, 심리 검사 플랫폼까지
+              다양한 도메인의 웹 애플리케이션을 개발해왔습니다.
+            </p>
+            <p>
+              사용자 경험을 최우선으로 생각하며, 복잡한 기능도 직관적으로 사용할
+              수 있도록 하는 것이 제 개발 철학입니다. 최신 기술 트렌드를
+              지속적으로 학습하고 적용하여 더 나은 서비스를 만들어가고 있습니다.
+            </p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item">
+              <h4>3+</h4>
+              <p>개발 경력</p>
             </div>
+            <div class="stat-item">
+              <h4>15+</h4>
+              <p>완료된 프로젝트</p>
+            </div>
+            <div class="stat-item">
+              <h4>5+</h4>
+              <p>협업 회사</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- 기술 섹션 -->
     <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">기술 스택</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>프론트엔드</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-react"></i>
-                            <span>React.js</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-vuejs"></i>
-                            <span>Vue.js</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-js-square"></i>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-html5"></i>
-                            <span>HTML5</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-css3-alt"></i>
-                            <span>CSS3</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-mobile-alt"></i>
-                            <span>React Native</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>상태 관리 & 도구</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>Zustand</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-git-alt"></i>
-                            <span>Git</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-tools"></i>
-                            <span>Jenkins</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-figma"></i>
-                            <span>Figma</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-code"></i>
-                            <span>VS Code</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>API & 통합</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fas fa-credit-card"></i>
-                            <span>결제 시스템</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-map"></i>
-                            <span>지도 API</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-user-check"></i>
-                            <span>소셜 로그인</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-globe"></i>
-                            <span>REST API</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-language"></i>
-                            <span>다국어(i18n)</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-php"></i>
-                            <span>PHP</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">기술 스택</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>프론트엔드</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-react"></i>
+                <span>React.js</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-vuejs"></i>
+                <span>Vue.js</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-js-square"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-mobile-alt"></i>
+                <span>React Native</span>
+              </div>
             </div>
+          </div>
+          <div class="skill-category">
+            <h3>상태 관리 & 도구</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <span>Zustand</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-tools"></i>
+                <span>Jenkins</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-figma"></i>
+                <span>Figma</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-code"></i>
+                <span>VS Code</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>API & 통합</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fas fa-credit-card"></i>
+                <span>결제 시스템</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-map"></i>
+                <span>지도 API</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-user-check"></i>
+                <span>소셜 로그인</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-globe"></i>
+                <span>REST API</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-language"></i>
+                <span>다국어(i18n)</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-php"></i>
+                <span>PHP</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- 경력 섹션 -->
     <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">경력 사항</h2>
-            <div class="experience-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">2024.08 - 현재</div>
-                    <div class="timeline-content">
-                        <h3>(주) 케이스랩</h3>
-                        <h4>Front-End Developer</h4>
-                        <p>창의적이고 전문적인 디자인 역량을 바탕으로 다양한 산업과 클라이언트에게 맞춤형 디자인 솔루션을 제공하는 에이전시</p>
-                        <ul>
-                            <li>영상 기반 심리 검사 시스템 개발 및 개선</li>
-                            <li>PDF 리포트 및 Chart.js를 활용한 심리 분석 결과 시각화</li>
-                            <li>소셜 로그인 및 JWT 토큰 기반 보안 시스템 구축</li>
-                            <li>결제 시스템 통합 및 포인트/쿠폰 기능 개발</li>
-                            <li>React.js, Vue.js, React Native 기반 다양한 프로젝트 개발</li>
-                            <li>SEO 최적화 및 네이버 지도 API 통합</li>
-                            <li>Jenkins를 활용한 CI/CD 자동화 배포 구축</li>
-                            <li>다국어 지원(i18n)</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">2023.02 - 2024.05</div>
-                    <div class="timeline-content">
-                        <h3>(주) 피씨엔씨</h3>
-                        <h4>Front-End Developer</h4>
-                        <p>독서와 LMS를 기반으로 한 에듀테크 기업으로 AI 기반의 웹 및 모바일 통합독서 지원 서비스 제공</p>
-                        <ul>
-                            <li>반응형 웹 및 스켈레톤 UI 구현으로 사용자 경험 개선</li>
-                            <li>학습 진도율 기반 프로세스 바 동적 업데이트 기능 개발</li>
-                            <li>REST API 및 VideoPlayer 라이브러리 활용한 동영상 재생 기능</li>
-                            <li>관리자 및 회원 페이지 전체 아키텍처 설계 및 개발</li>
-                            <li>React Native 앱 리팩토링 및 가로 모드 UI 개선</li>
-                            <li>Jenkins를 활용한 CI/CD 자동화 배포 구축</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">경력 사항</h2>
+        <div class="experience-timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2024.08 - 현재</div>
+            <div class="timeline-content">
+              <h3>(주) 케이스랩</h3>
+              <h4>Front-End Developer</h4>
+              <p>
+                창의적이고 전문적인 디자인 역량을 바탕으로 다양한 산업과
+                클라이언트에게 맞춤형 디자인 솔루션을 제공하는 에이전시
+              </p>
+              <ul>
+                <li>영상 기반 심리 검사 시스템 개발 및 개선</li>
+                <li>PDF 리포트 및 Chart.js를 활용한 심리 분석 결과 시각화</li>
+                <li>소셜 로그인 및 JWT 토큰 기반 보안 시스템 구축</li>
+                <li>결제 시스템 통합 및 포인트/쿠폰 기능 개발</li>
+                <li>
+                  React.js, Vue.js, React Native 기반 다양한 프로젝트 개발
+                </li>
+                <li>SEO 최적화 및 네이버 지도 API 통합</li>
+                <li>Jenkins를 활용한 CI/CD 자동화 배포 구축</li>
+                <li>다국어 지원(i18n)</li>
+              </ul>
             </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2023.02 - 2024.05</div>
+            <div class="timeline-content">
+              <h3>(주) 피씨엔씨</h3>
+              <h4>Front-End Developer</h4>
+              <p>
+                독서와 LMS를 기반으로 한 에듀테크 기업으로 AI 기반의 웹 및
+                모바일 통합독서 지원 서비스 제공
+              </p>
+              <ul>
+                <li>반응형 웹 및 스켈레톤 UI 구현으로 사용자 경험 개선</li>
+                <li>학습 진도율 기반 프로세스 바 동적 업데이트 기능 개발</li>
+                <li>
+                  REST API 및 VideoPlayer 라이브러리 활용한 동영상 재생 기능
+                </li>
+                <li>관리자 및 회원 페이지 전체 아키텍처 설계 및 개발</li>
+                <li>React Native 앱 리팩토링 및 가로 모드 UI 개선</li>
+                <li>Jenkins를 활용한 CI/CD 자동화 배포 구축</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- 프로젝트 섹션 -->
     <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">주요 프로젝트</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="/static/media/project1.jpg" alt="아이큐 비타민">
-                        <div class="project-overlay">
-                            <a href="https://iqvitamininside.com/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>아이큐 비타민</h3>
-                        <p>동화 기반 심리 검사 플랫폼. 영상 내 질문/답변 시스템과 PDF 리포트 생성 기능을 구현했습니다.</p>
-                        <div class="project-tech">
-                            <span>React.js</span>
-                            <span>Zustand</span>
-                            <span>Chart.js</span>
-                            <span>PDF</span>
-                            <span>소셜로그인</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="/static/media/project2.jpg" alt="오톡 쇼핑몰">
-                        <div class="project-overlay">
-                            <a href="https://www.otok.co.kr/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>오톡 쇼핑몰</h3>
-                        <p>천연 원료 제품 판매 쇼핑몰. 장바구니, 찜하기, 결제 시스템 등 전체 쇼핑몰 기능을 구현했습니다.</p>
-                        <div class="project-tech">
-                            <span>React.js</span>
-                            <span>토스결제</span>
-                            <span>Zustand</span>
-                            <span>다음주소API</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="/static/media/project3.jpg" alt="별별신당">
-                        <div class="project-overlay">
-                            <a href="https://www.byuldang.com/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>별별신당</h3>
-                        <p>점집 정보 제공 플랫폼. 네이버 지도 API 통합과 별점/리뷰 시스템, SEO 최적화를 구현했습니다.</p>
-                        <div class="project-tech">
-                            <span>React.js</span>
-                            <span>Vue.js</span>
-                            <span>네이버지도API</span>
-                            <span>SEO</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="/static/media/project1.jpg" alt="데이페이">
-                        <div class="project-overlay">
-                            <a href="https://www-daypay.kacelab.com/main?type=CINEMA" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>데이페이</h3>
-                        <p>카메라 렌탈 플랫폼. 다국어 지원(i18n), 본인인증, 결제 시스템 등 복합적인 기능을 구현했습니다.</p>
-                        <div class="project-tech">
-                            <span>React.js</span>
-                            <span>i18n</span>
-                            <span>본인인증</span>
-                            <span>이니시스결제</span>
-                            <span>SEO</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="/static/media/project2.jpg" alt="한국어 교육 플랫폼">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>한국어 교육 온라인 플랫폼</h3>
-                        <p>외국인 대상 한국어 학습 플랫폼. 강의 관리, 진도 관리, 결제 시스템 등 LMS 전체 기능을 개발했습니다.</p>
-                        <div class="project-tech">
-                            <span>React.js</span>
-                            <span>LMS</span>
-                            <span>결제시스템</span>
-                            <span>진도관리</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="/static/media/project3.jpg" alt="React Native 앱">
-                        <div class="project-overlay">
-                            <a href="https://play.google.com/store/apps/details?id=com.hustay.swing.d60e048268bdb4719b02127dab7d33f24&hl=ko&gl=US&pli=1" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>독서 지원 모바일 앱</h3>
-                        <p>AI 기반 독서 지원 React Native 앱. 앱 리팩토링 및 가로 모드 UI 개선을 담당했습니다.</p>
-                        <div class="project-tech">
-                            <span>React Native</span>
-                            <span>AI</span>
-                            <span>독서지원</span>
-                            <span>리팩토링</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">주요 프로젝트</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="../static/media/iq.png" alt="아이큐 비타민" />
+              <div class="project-overlay">
+                <a
+                  href="https://iqvitamininside.com/"
+                  class="project-link"
+                  target="_blank"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+                <!-- <a href="#" class="project-github"
+                  ><i class="fab fa-github"></i
+                ></a> -->
+              </div>
             </div>
+            <div class="project-content">
+              <h3>아이큐 비타민</h3>
+              <p>
+                동화 기반 심리 검사 플랫폼. 영상 내 질문/답변 시스템과 PDF
+                리포트 생성 기능을 구현했습니다.
+              </p>
+              <div class="project-tech">
+                <span>React.js</span>
+                <span>Zustand</span>
+                <span>Chart.js</span>
+                <span>PDF</span>
+                <span>소셜로그인</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="../static/media/12.png" alt="오톡 쇼핑몰" />
+              <div class="project-overlay">
+                <a
+                  href="https://www.otok.co.kr/"
+                  class="project-link"
+                  target="_blank"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+                <!-- <a href="#" class="project-github"
+                  ><i class="fab fa-github"></i
+                ></a> -->
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>오톡 쇼핑몰</h3>
+              <p>
+                천연 원료 제품 판매 쇼핑몰. 장바구니, 찜하기, 결제 시스템 등
+                전체 쇼핑몰 기능을 구현했습니다.
+              </p>
+              <div class="project-tech">
+                <span>React.js</span>
+                <span>토스결제</span>
+                <span>Zustand</span>
+                <span>다음주소API</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="../static/media/13.png" alt="별별신당" />
+              <div class="project-overlay">
+                <a
+                  href="https://www.byuldang.com/"
+                  class="project-link"
+                  target="_blank"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+                <!-- <a href="#" class="project-github"
+                  ><i class="fab fa-github"></i
+                ></a> -->
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>별별신당</h3>
+              <p>
+                점집 정보 제공 플랫폼. 네이버 지도 API 통합과 별점/리뷰 시스템,
+                SEO 최적화를 구현했습니다.
+              </p>
+              <div class="project-tech">
+                <span>React.js</span>
+                <span>Vue.js</span>
+                <span>네이버지도API</span>
+                <span>SEO</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="../static/media/16.png" alt="데이페이" />
+              <div class="project-overlay">
+                <a
+                  href="https://www-daypay.kacelab.com/main?type=CINEMA"
+                  class="project-link"
+                  target="_blank"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+                <!-- <a href="#" class="project-github"
+                  ><i class="fab fa-github"></i
+                ></a> -->
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>데이페이</h3>
+              <p>
+                카메라 렌탈 플랫폼. 다국어 지원(i18n), 본인인증, 결제 시스템 등
+                복합적인 기능을 구현했습니다.
+              </p>
+              <div class="project-tech">
+                <span>React.js</span>
+                <span>i18n</span>
+                <span>본인인증</span>
+                <span>이니시스결제</span>
+                <span>SEO</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="../static/media/15.png" alt="한국어 교육 플랫폼" />
+              <div class="project-overlay">
+                <a href="#" class="project-link"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+                <!-- <a href="#" class="project-github"
+                  ><i class="fab fa-github"></i
+                ></a> -->
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>한국어 교육 온라인 플랫폼</h3>
+              <p>
+                외국인 대상 한국어 학습 플랫폼. 강의 관리, 진도 관리, 결제
+                시스템 등 LMS 전체 기능을 개발했습니다.
+              </p>
+              <div class="project-tech">
+                <span>React.js</span>
+                <span>LMS</span>
+                <span>결제시스템</span>
+                <span>진도관리</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="../static/media/14.png" alt="React Native 앱" />
+              <div class="project-overlay">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.hustay.swing.d60e048268bdb4719b02127dab7d33f24&hl=ko&gl=US&pli=1"
+                  class="project-link"
+                  target="_blank"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+                <!-- <a href="#" class="project-github"
+                  ><i class="fab fa-github"></i
+                ></a> -->
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>독서 지원 모바일 앱</h3>
+              <p>
+                AI 기반 독서 지원 React Native 앱. 앱 리팩토링 및 가로 모드 UI
+                개선을 담당했습니다.
+              </p>
+              <div class="project-tech">
+                <span>React Native</span>
+                <span>AI</span>
+                <span>독서지원</span>
+                <span>리팩토링</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- 연락처 섹션 -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">연락처</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>함께 작업하고 싶으신가요?</h3>
-                    <p>새로운 프로젝트나 협업 기회에 대해 이야기해보세요!</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>wnsgud8845@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>010-7545-4084</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>서울, 대한민국</span>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="이름" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="이메일" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="메시지" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">메시지 보내기</button>
-                    </form>
-                </div>
+      <div class="container">
+        <h2 class="section-title">연락처</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>함께 작업하고 싶으신가요?</h3>
+            <p>새로운 프로젝트나 협업 기회에 대해 이야기해보세요!</p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>wnsgud8845@gmail.com</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>010-7545-4084</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>서울, 대한민국</span>
+              </div>
             </div>
+            <div class="social-links">
+              <a
+                href="https://github.com/junhyungkwon"
+                class="social-link"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://velog.io/@junhyungkwon/posts"
+                class="social-link"
+                target="_blank"
+              >
+                <img
+                  src="../static/media/b.png"
+                  alt="Velog"
+                  style="width: 24px; height: 24px; vertical-align: middle"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contact-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="이름"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="이메일"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="메시지"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                메시지 보내기
+              </button>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- 푸터 -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Frontend Developer Portfolio.</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2024 Frontend Developer Portfolio.</p>
+      </div>
     </footer>
 
     <script src="/static/js/portfolio.js"></script>
-</body>
+  </body>
 </html>
